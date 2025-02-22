@@ -1,0 +1,220 @@
+.career-recommendation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.select-option {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  width: 100%;
+  max-width: 300px;
+  background-color: #f6f6f6;
+  color: #00273a;
+}
+
+.generate-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #00273a;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.generate-button:hover {
+  background-color: #004050;
+}
+
+.spinner {
+  margin-top: 5rem;
+  color: #00273a;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Table Styles */
+.results-tables {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recommendation-table {
+  width: 100%; /* Ensure the tables take full width of the container */
+  border-collapse: collapse;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Ensures no extra margin is added */
+}
+
+.recommendation-table caption {
+  font-weight: bold;
+  padding: 0.75rem;
+  background-color: #00273a;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.recommendation-table th {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.recommendation-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #444;
+  font-size:smaller;
+}
+
+/* Hover effect for rows */
+.recommendation-table tbody tr:hover {
+  background-color: #fafafa;
+  transition: background-color 0.3s ease;
+}
+
+/* Add Button Styling */
+.add-button {
+  padding: 0.5rem 1rem;
+  background-color: #00273a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.add-button:hover {
+  background-color: #004050;
+  transform: scale(1.05);
+}
+.placeholder-content {
+  text-align: center;
+  padding: 30px;
+  margin-top: 30px;
+  background: linear-gradient(135deg, #a6c1ee, #f0f4f8);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* Make it responsive */
+  max-width: 700px;
+  animation: fadeIn 1s ease-out;
+}
+
+.placeholder-content h3 {
+  color: #2c3e50;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  animation: slideUp 0.8s ease-out;
+}
+
+.placeholder-content p {
+  color: #7f8c8d;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  animation: slideUp 1s ease-out;
+}
+
+.placeholder-image {
+  width: 60%; /* Control the image size */
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.placeholder-image:hover {
+  transform: scale(1.05); /* Add zoom effect on hover */
+}
+
+.instruction-text {
+  font-size: 14px;
+  color: #bdc3c7;
+  font-style: italic;
+  animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* Responsive adjustments for small screens */
+@media (max-width: 1000px) {
+  .results-tables {
+    margin: 0;
+  }
+  
+}
+
+@media (max-width: 1500px) {
+  .career-recommendation-container {
+    gap: 0.75rem;
+  }
+
+  .select-option {
+    max-width: 100%;
+  }
+
+  .generate-button {
+    padding: 0.75rem 1rem;
+  }
+
+  /* Make tables horizontally scrollable */
+  .results-tables table {
+    overflow-x: auto;
+
+  }
+
+  /* Improve the appearance of the buttons and tables */
+  .add-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .recommendation-table th,
+  .recommendation-table td {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+}
+

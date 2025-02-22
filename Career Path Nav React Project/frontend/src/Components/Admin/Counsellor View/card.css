@@ -1,0 +1,192 @@
+:root {
+  --text-color: #303972;
+  --text-secondary: #00273a;
+  --light-color: #a098ae;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #e8e3e3;
+  --gray-2: #757575;
+  --icon-color: #fb7d5b;
+  --icon-secondary: #fcc43e;
+
+  --container-color: #f9f9f9;
+  --background-color: #00273a1a;
+
+  --label01: #1eba62;
+  --labelB01: #ddfaea;
+  --label02: #fb7d5b;
+  --labelB02: #fff3f0;
+  --label03: #fd5353;
+  --labelB03: #ffeaea;
+}
+
+.counsellor-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  grid-gap: 20px; /* space between cards */
+  margin: 20px;
+  padding: 0;
+  max-width: 1250px;
+  margin-left: 250px;
+}
+
+.counsellor-card {
+  width: 270px;
+  padding: 20px;
+  margin: none;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: var(--white);
+
+  transform: scale(1); /* Initial scale */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  animation: fadeIn 1s ease-out;
+}
+
+.counsellor-card:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+
+.counsellor-card-image {
+  margin-bottom: 15px;
+}
+
+.counsellor-profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--text-secondary);
+  object-fit: cover;
+}
+
+.counsellor-card-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.counsellor-card-paragraph {
+  font-size: 14px;
+  color: var(--light-color);
+  margin-bottom: 15px;
+}
+
+.counsellor-card-label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.counsellor-card-label-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.counsellor-card-label01,
+.counsellor-card-label02,
+.counsellor-card-label03,
+.counsellor-card-label04,
+.counsellor-card-label05,
+.counsellor-card-label06 {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  max-width: 100%; /* Prevent overflow */
+  overflow-wrap: break-word; /* Ensure text wraps properly */
+}
+
+
+
+.counsellor-card-label01 {
+  background-color: var(--labelB01);
+  color: var(--label01);
+}
+
+.counsellor-card-label02 {
+  background-color: var(--labelB02);
+  color: var(--label02);
+}
+
+.counsellor-card-label03 {
+  background-color: var(--labelB03);
+  color: var(--label03);
+}
+
+.counsellor-card-label04 {
+  background-color: #a2f9c2; 
+  color: #15a453; /* Green color */
+}
+
+.counsellor-card-label05 {
+  background-color: #f3bebe; 
+  color: #e93b3b; /* Red color */
+}
+
+.counsellor-card-label06 {
+  background-color: #fbe6a1;
+  color: #ed6844; /* Orange color */
+}
+
+.counsellor-card-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.counsellor-card-button {
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.counsellor-card-button.primary {
+  background-color: var(--text-secondary);
+  color: white;
+}
+
+
+.counsellor-card-button.secondary {
+  background-color: var(--gray);
+  color: var(--text-secondary);
+}
+
+.counsellor-card-button:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 1250px) {
+  .counsellor-card-grid {
+    margin-left: 0;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 790px) {
+  .counsellor-card-grid {
+    margin-left: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .counsellor-card-grid {
+    margin-left: 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}
