@@ -16,7 +16,7 @@ import { FaTag, FaClock } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-
+// here user can view his or her profile
 const StudentView = () => {
   const userData = JSON.parse(localStorage.getItem("CareerPathNavigatorUsers"));
   const username = userData.user.firstName + " " + userData.user.lastName;
