@@ -1,5 +1,3 @@
-
-
 :root {
   --text-color: #303972;
   --text-secondary: #00273a;
@@ -427,7 +425,7 @@ tbody tr td:nth-child(1) {
   }
 
   .profile-picture {
-    width: 100px; /* Resize  the profile picture */
+    width: 100px; /* Resize profile picture */
     height: 100px;
   }
 
@@ -451,7 +449,7 @@ tbody tr td:nth-child(1) {
   }
 
   .pagination-buttons {
-    text-align: center; /* Center the pagination buttons */
+    text-align: center; /* Center pagination buttons */
   }
 
   .additional-info-container {
@@ -460,12 +458,12 @@ tbody tr td:nth-child(1) {
   }
 
   .background-heading {
-    font-size: 16px; /* Adjust the heading font size */
+    font-size: 16px; /* Adjust heading font size */
     padding: 15px; /* Adjust padding */
   }
 }
 .interest-item {
-  margin-bottom: 20px; /* Adds space after the each interest item */
+  margin-bottom: 20px; /* Adds space after each interest item */
 }
 
 /* Mobile screens */
@@ -477,30 +475,30 @@ tbody tr td:nth-child(1) {
 
   .profile-container {
     width: 100%;
-    padding: 10px; /* Reduce the padding */
+    padding: 10px; /* Reduce padding */
     max-height: 1050px;
   }
 
   .profile-header {
-    height: 180px; /* Adjust  the header height for mobile */
+    height: 180px; /* Adjust header height for mobile */
   }
 
   .profile-picture-container {
-    left: 15px; /* Adjust the position for mobile screens */
+    left: 15px; /* Adjust position for mobile screens */
     transform: translateY(-30%);
   }
 
   .student-name h2 {
-    font-size: 16px; /* Adjust  the font size for mobile */
+    font-size: 16px; /* Adjust font size for mobile */
   }
 
   .info-column {
     width: 100%;
-    margin-bottom: 20px; /* Stack information columns */
+    margin-bottom: 20px; /* Stack info columns */
   }
 
   .personal-info {
-    flex-direction: column; /* Stack personal information vertically */
+    flex-direction: column; /* Stack personal info vertically */
     gap: 20px; /* Adjust gap */
   }
 
@@ -530,5 +528,3 @@ tbody tr td:nth-child(1) {
     font-size: 14px; /* Adjust font size of info text */
   }
 }
-
-/* Styling for the student View profile */
