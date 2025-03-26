@@ -130,7 +130,7 @@
 }
 .profile-container {
   flex: 4; /* 80% of the main container */
-  max-width: 100%; /* Ensures it can scale to flex percentage */
+  max-width: 100%; /* Ensures that it can scale to flex percentage */
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: var(--container-color);
@@ -192,7 +192,7 @@
 }
 
 tbody tr td:nth-child(2) {
-  color: var(--gray-2); /* Degree column color */
+  color: var(--gray-2); /* Degree of the column color */
 }
 
 tbody tr td:nth-child(3),
